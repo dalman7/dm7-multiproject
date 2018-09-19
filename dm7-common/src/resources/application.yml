@@ -1,0 +1,23 @@
+
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create    # create, update, create-drop, none 등의 옵션이 있습니다.
+      use-new-id-generator-mappings: true
+    generate-ddl: false   # DDl 생성 시 데이터베이스 고유의 기능 사용여부
+    #show-sql: true        # 실행되는 쿼리문 보여주기 여부
+
+oauthuser:
+  datasource:
+    jdbc-url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: sa
+    driver-class-name: org.h2.Driver
+---
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: INFO
+    # org.hibernate.stat: debug
+    # org.hibernate.type: trace

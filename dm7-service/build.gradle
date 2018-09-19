@@ -1,0 +1,10 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compile project(':dm7-common')
+
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('org.springframework.boot:spring-boot-starter-webflux')
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    testCompile('io.projectreactor:reactor-test')
+}

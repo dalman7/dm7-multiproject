@@ -1,0 +1,5 @@
+rootProject.name = 'dm7-multiproject'
+
+include 'dm7-common'
+include 'dm7-login'
+include 'dm7-service'
